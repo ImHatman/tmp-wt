@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		045BE36C1CC0E65C33C757D5 /* libPods-WeaveTime-production.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 624D37BFB64D775E5758950E /* libPods-WeaveTime-production.a */; };
+		3D09D6D20075329969EA3CFE /* libPods-WeaveTime-internal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72EB445DCD59AD8493FEE26C /* libPods-WeaveTime-internal.a */; };
+		F15719FA1ED7230F00BB8019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1ABB7481ED7227E00C661FE /* Main.storyboard */; };
+		F15719FB1ED7231200BB8019 /* WTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ABB7431ED7227E00C661FE /* WTAppDelegate.m */; };
+		F15719FC1ED7231800BB8019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1ABB74D1ED7227E00C661FE /* LaunchScreen.storyboard */; };
+		F1571A191ED723BC00BB8019 /* WTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ABB7431ED7227E00C661FE /* WTAppDelegate.m */; };
+		F1571A1B1ED723C400BB8019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1ABB7481ED7227E00C661FE /* Main.storyboard */; };
+		F1571A1C1ED723C800BB8019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1ABB74D1ED7227E00C661FE /* LaunchScreen.storyboard */; };
+		F1571A211ED7256F00BB8019 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ABB7401ED7227E00C661FE /* main.m */; };
+		F1571A221ED7256F00BB8019 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ABB7401ED7227E00C661FE /* main.m */; };
+		F1571A261ED726AA00BB8019 /* WTRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1571A251ED726AA00BB8019 /* WTRequestOperationManager.m */; };
+		F1571A271ED726AA00BB8019 /* WTRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1571A251ED726AA00BB8019 /* WTRequestOperationManager.m */; };
+		F1571A2C1ED727E500BB8019 /* WTAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F1571A2B1ED727E500BB8019 /* WTAPIClient.m */; };
+		F1571A2D1ED727E500BB8019 /* WTAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F1571A2B1ED727E500BB8019 /* WTAPIClient.m */; };
+		F1571A321ED7291E00BB8019 /* NSString+WeaveTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F1571A311ED7291E00BB8019 /* NSString+WeaveTime.m */; };
+		F1571A331ED7291E00BB8019 /* NSString+WeaveTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F1571A311ED7291E00BB8019 /* NSString+WeaveTime.m */; };
+		F1571A361ED7609000BB8019 /* WTUserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1571A351ED7609000BB8019 /* WTUserDefaultsManager.m */; };
+		F1571A371ED7609000BB8019 /* WTUserDefaultsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1571A351ED7609000BB8019 /* WTUserDefaultsManager.m */; };
+		F1571A4D1ED76D6800BB8019 /* WTSplashScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1571A4C1ED76D6800BB8019 /* WTSplashScreenVC.m */; };
+		F1571A4E1ED76D6800BB8019 /* WTSplashScreenVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F1571A4C1ED76D6800BB8019 /* WTSplashScreenVC.m */; };
+		F1571A511ED8652200BB8019 /* WTUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1571A501ED8652200BB8019 /* WTUserManager.m */; };
+		F1571A521ED8652200BB8019 /* WTUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F1571A501ED8652200BB8019 /* WTUserManager.m */; };
+		F1571A551ED8667C00BB8019 /* WTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F1571A541ED8667C00BB8019 /* WTUser.m */; };
+		F1571A561ED8667C00BB8019 /* WTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F1571A541ED8667C00BB8019 /* WTUser.m */; };
+		F1571A5D1EDB67CA00BB8019 /* UIColor+WeaveTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F1571A5C1EDB67CA00BB8019 /* UIColor+WeaveTime.m */; };
+		F1571A5E1EDB67CA00BB8019 /* UIColor+WeaveTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F1571A5C1EDB67CA00BB8019 /* UIColor+WeaveTime.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		13F6A704925099124BEF7172 /* Pods-WeaveTime-production.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaveTime-production.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeaveTime-production/Pods-WeaveTime-production.debug.xcconfig"; sourceTree = "<group>"; };
+		28ADD29829C82E1AF29919C0 /* Pods-WeaveTime-internal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaveTime-internal.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeaveTime-internal/Pods-WeaveTime-internal.release.xcconfig"; sourceTree = "<group>"; };
+		5F40C6CD8185C11FAABB03DC /* Pods-WeaveTime-internal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaveTime-internal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeaveTime-internal/Pods-WeaveTime-internal.debug.xcconfig"; sourceTree = "<group>"; };
+		624D37BFB64D775E5758950E /* libPods-WeaveTime-production.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeaveTime-production.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72EB445DCD59AD8493FEE26C /* libPods-WeaveTime-internal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeaveTime-internal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A6F316D423D3570857C781F /* Pods-WeaveTime-production.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaveTime-production.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeaveTime-production/Pods-WeaveTime-production.release.xcconfig"; sourceTree = "<group>"; };
+		F1571A021ED7237C00BB8019 /* WeaveTime-production.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WeaveTime-production.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1571A1E1ED7242900BB8019 /* Info-internal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-internal.plist"; sourceTree = "<group>"; };
+		F1571A241ED726AA00BB8019 /* WTRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTRequestOperationManager.h; sourceTree = "<group>"; };
+		F1571A251ED726AA00BB8019 /* WTRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTRequestOperationManager.m; sourceTree = "<group>"; };
+		F1571A2A1ED727E500BB8019 /* WTAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTAPIClient.h; sourceTree = "<group>"; };
+		F1571A2B1ED727E500BB8019 /* WTAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTAPIClient.m; sourceTree = "<group>"; };
+		F1571A301ED7291E00BB8019 /* NSString+WeaveTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+WeaveTime.h"; path = "Categories/NSString+WeaveTime.h"; sourceTree = "<group>"; };
+		F1571A311ED7291E00BB8019 /* NSString+WeaveTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+WeaveTime.m"; path = "Categories/NSString+WeaveTime.m"; sourceTree = "<group>"; };
+		F1571A341ED7609000BB8019 /* WTUserDefaultsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTUserDefaultsManager.h; sourceTree = "<group>"; };
+		F1571A351ED7609000BB8019 /* WTUserDefaultsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTUserDefaultsManager.m; sourceTree = "<group>"; };
+		F1571A411ED76B9D00BB8019 /* WTPrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTPrefixHeader.pch; sourceTree = "<group>"; };
+		F1571A4B1ED76D6800BB8019 /* WTSplashScreenVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTSplashScreenVC.h; sourceTree = "<group>"; };
+		F1571A4C1ED76D6800BB8019 /* WTSplashScreenVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTSplashScreenVC.m; sourceTree = "<group>"; };
+		F1571A4F1ED8652200BB8019 /* WTUserManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTUserManager.h; sourceTree = "<group>"; };
+		F1571A501ED8652200BB8019 /* WTUserManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTUserManager.m; sourceTree = "<group>"; };
+		F1571A531ED8667C00BB8019 /* WTUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WTUser.h; path = Model/WTUser.h; sourceTree = "<group>"; };
+		F1571A541ED8667C00BB8019 /* WTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WTUser.m; path = Model/WTUser.m; sourceTree = "<group>"; };
+		F1571A5B1EDB67CA00BB8019 /* UIColor+WeaveTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WeaveTime.h"; sourceTree = "<group>"; };
+		F1571A5C1EDB67CA00BB8019 /* UIColor+WeaveTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WeaveTime.m"; sourceTree = "<group>"; };
+		F1ABB7401ED7227E00C661FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F1ABB7421ED7227E00C661FE /* WTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAppDelegate.h; sourceTree = "<group>"; };
+		F1ABB7431ED7227E00C661FE /* WTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAppDelegate.m; sourceTree = "<group>"; };
+		F1ABB7491ED7227E00C661FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1ABB74B1ED7227E00C661FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		F1ABB74E1ED7227E00C661FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F1ABB7501ED7227E00C661FE /* Info-production.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Info-production.plist"; sourceTree = "<group>"; };
+		F1ABB7581ED7228C00C661FE /* WeaveTime-internal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WeaveTime-internal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F15719FF1ED7237C00BB8019 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				045BE36C1CC0E65C33C757D5 /* libPods-WeaveTime-production.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1ABB7551ED7228C00C661FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D09D6D20075329969EA3CFE /* libPods-WeaveTime-internal.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5130671BB92A3ED2244BF30C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5F40C6CD8185C11FAABB03DC /* Pods-WeaveTime-internal.debug.xcconfig */,
+				28ADD29829C82E1AF29919C0 /* Pods-WeaveTime-internal.release.xcconfig */,
+				13F6A704925099124BEF7172 /* Pods-WeaveTime-production.debug.xcconfig */,
+				7A6F316D423D3570857C781F /* Pods-WeaveTime-production.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		88B0562F856203FEE707FC24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				72EB445DCD59AD8493FEE26C /* libPods-WeaveTime-internal.a */,
+				624D37BFB64D775E5758950E /* libPods-WeaveTime-production.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F15719FD1ED7231F00BB8019 /* plist */ = {
+			isa = PBXGroup;
+			children = (
+				F1571A1E1ED7242900BB8019 /* Info-internal.plist */,
+				F1ABB7501ED7227E00C661FE /* Info-production.plist */,
+			);
+			name = plist;
+			sourceTree = "<group>";
+		};
+		F1571A281ED726B200BB8019 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F1571A241ED726AA00BB8019 /* WTRequestOperationManager.h */,
+				F1571A251ED726AA00BB8019 /* WTRequestOperationManager.m */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		F1571A291ED726FB00BB8019 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F1ABB7481ED7227E00C661FE /* Main.storyboard */,
+				F1ABB74D1ED7227E00C661FE /* LaunchScreen.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		F1571A2E1ED7282E00BB8019 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F1571A571ED8669600BB8019 /* Model */,
+				F1571A461ED76CDA00BB8019 /* Controllers */,
+				F1571A381ED760C700BB8019 /* Singletons */,
+				F1571A2F1ED728E000BB8019 /* Categories */,
+				F1571A3C1ED768CF00BB8019 /* Others */,
+				F1ABB7421ED7227E00C661FE /* WTAppDelegate.h */,
+				F1ABB7431ED7227E00C661FE /* WTAppDelegate.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F1571A2F1ED728E000BB8019 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F1571A5A1EDB679500BB8019 /* UIColor */,
+				F1571A391ED7610F00BB8019 /* NSString */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		F1571A381ED760C700BB8019 /* Singletons */ = {
+			isa = PBXGroup;
+			children = (
+				F1571A591EDB678000BB8019 /* User Manager */,
+				F1571A3B1ED7689B00BB8019 /* Networking */,
+				F1571A3A1ED7611C00BB8019 /* User Defaults */,
+			);
+			path = Singletons;
+			sourceTree = "<group>";
+		};
+		F1571A391ED7610F00BB8019 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				F1571A301ED7291E00BB8019 /* NSString+WeaveTime.h */,
+				F1571A311ED7291E00BB8019 /* NSString+WeaveTime.m */,
+			);
+			name = NSString;
+			sourceTree = "<group>";
+		};
+		F1571A3A1ED7611C00BB8019 /* User Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				F1571A341ED7609000BB8019 /* WTUserDefaultsManager.h */,
+				F1571A351ED7609000BB8019 /* WTUserDefaultsManager.m */,
+			);
+			name = "User Defaults";
+			sourceTree = "<group>";
+		};
+		F1571A3B1ED7689B00BB8019 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				F1571A2A1ED727E500BB8019 /* WTAPIClient.h */,
+				F1571A2B1ED727E500BB8019 /* WTAPIClient.m */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		F1571A3C1ED768CF00BB8019 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				F1571A281ED726B200BB8019 /* Networking */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		F1571A461ED76CDA00BB8019 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F1571A4B1ED76D6800BB8019 /* WTSplashScreenVC.h */,
+				F1571A4C1ED76D6800BB8019 /* WTSplashScreenVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F1571A571ED8669600BB8019 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F1571A581ED8669A00BB8019 /* User */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F1571A581ED8669A00BB8019 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				F1571A531ED8667C00BB8019 /* WTUser.h */,
+				F1571A541ED8667C00BB8019 /* WTUser.m */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		F1571A591EDB678000BB8019 /* User Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F1571A4F1ED8652200BB8019 /* WTUserManager.h */,
+				F1571A501ED8652200BB8019 /* WTUserManager.m */,
+			);
+			name = "User Manager";
+			sourceTree = "<group>";
+		};
+		F1571A5A1EDB679500BB8019 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				F1571A5B1EDB67CA00BB8019 /* UIColor+WeaveTime.h */,
+				F1571A5C1EDB67CA00BB8019 /* UIColor+WeaveTime.m */,
+			);
+			name = UIColor;
+			sourceTree = "<group>";
+		};
+		F1ABB7161ED71F2D00C661FE = {
+			isa = PBXGroup;
+			children = (
+				F1ABB73E1ED7227E00C661FE /* WeaveTime */,
+				F1ABB7201ED71F2D00C661FE /* Products */,
+				5130671BB92A3ED2244BF30C /* Pods */,
+				88B0562F856203FEE707FC24 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1ABB7201ED71F2D00C661FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1ABB7581ED7228C00C661FE /* WeaveTime-internal.app */,
+				F1571A021ED7237C00BB8019 /* WeaveTime-production.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1ABB73E1ED7227E00C661FE /* WeaveTime */ = {
+			isa = PBXGroup;
+			children = (
+				F1571A2E1ED7282E00BB8019 /* Sources */,
+				F1571A291ED726FB00BB8019 /* UI */,
+				F1ABB73F1ED7227E00C661FE /* Supporting Files */,
+			);
+			path = WeaveTime;
+			sourceTree = "<group>";
+		};
+		F1ABB73F1ED7227E00C661FE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F1ABB74B1ED7227E00C661FE /* Assets.xcassets */,
+				F1ABB7401ED7227E00C661FE /* main.m */,
+				F15719FD1ED7231F00BB8019 /* plist */,
+				F1571A411ED76B9D00BB8019 /* WTPrefixHeader.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1571A011ED7237C00BB8019 /* WeaveTime-production */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1571A161ED7237C00BB8019 /* Build configuration list for PBXNativeTarget "WeaveTime-production" */;
+			buildPhases = (
+				E9295E1334E58CEC41006C74 /* [CP] Check Pods Manifest.lock */,
+				F15719FE1ED7237C00BB8019 /* Sources */,
+				F15719FF1ED7237C00BB8019 /* Frameworks */,
+				F1571A001ED7237C00BB8019 /* Resources */,
+				FCB4D951AD52C659B0259CE0 /* [CP] Embed Pods Frameworks */,
+				F37D5B85E72B51DE4D427201 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WeaveTime-production";
+			productName = WeaveTime;
+			productReference = F1571A021ED7237C00BB8019 /* WeaveTime-production.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1ABB7571ED7228C00C661FE /* WeaveTime-internal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1ABB76C1ED7228C00C661FE /* Build configuration list for PBXNativeTarget "WeaveTime-internal" */;
+			buildPhases = (
+				0B28897D54A4875E90AE1B14 /* [CP] Check Pods Manifest.lock */,
+				F1ABB7541ED7228C00C661FE /* Sources */,
+				F1ABB7551ED7228C00C661FE /* Frameworks */,
+				F1ABB7561ED7228C00C661FE /* Resources */,
+				7C8F1597876F1F8A365126E0 /* [CP] Embed Pods Frameworks */,
+				16D07C31C20D094EF478C52E /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WeaveTime-internal";
+			productName = "WeaveTime-internal";
+			productReference = F1ABB7581ED7228C00C661FE /* WeaveTime-internal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1ABB7171ED71F2D00C661FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Geoks;
+				TargetAttributes = {
+					F1571A011ED7237C00BB8019 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					F1ABB7571ED7228C00C661FE = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F1ABB71A1ED71F2D00C661FE /* Build configuration list for PBXProject "WeaveTime" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1ABB7161ED71F2D00C661FE;
+			productRefGroup = F1ABB7201ED71F2D00C661FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1571A011ED7237C00BB8019 /* WeaveTime-production */,
+				F1ABB7571ED7228C00C661FE /* WeaveTime-internal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1571A001ED7237C00BB8019 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1571A1C1ED723C800BB8019 /* LaunchScreen.storyboard in Resources */,
+				F1571A1B1ED723C400BB8019 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1ABB7561ED7228C00C661FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15719FA1ED7230F00BB8019 /* Main.storyboard in Resources */,
+				F15719FC1ED7231800BB8019 /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0B28897D54A4875E90AE1B14 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		16D07C31C20D094EF478C52E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeaveTime-internal/Pods-WeaveTime-internal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7C8F1597876F1F8A365126E0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeaveTime-internal/Pods-WeaveTime-internal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9295E1334E58CEC41006C74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F37D5B85E72B51DE4D427201 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeaveTime-production/Pods-WeaveTime-production-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FCB4D951AD52C659B0259CE0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeaveTime-production/Pods-WeaveTime-production-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F15719FE1ED7237C00BB8019 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1571A191ED723BC00BB8019 /* WTAppDelegate.m in Sources */,
+				F1571A211ED7256F00BB8019 /* main.m in Sources */,
+				F1571A2C1ED727E500BB8019 /* WTAPIClient.m in Sources */,
+				F1571A321ED7291E00BB8019 /* NSString+WeaveTime.m in Sources */,
+				F1571A4D1ED76D6800BB8019 /* WTSplashScreenVC.m in Sources */,
+				F1571A5D1EDB67CA00BB8019 /* UIColor+WeaveTime.m in Sources */,
+				F1571A361ED7609000BB8019 /* WTUserDefaultsManager.m in Sources */,
+				F1571A261ED726AA00BB8019 /* WTRequestOperationManager.m in Sources */,
+				F1571A551ED8667C00BB8019 /* WTUser.m in Sources */,
+				F1571A511ED8652200BB8019 /* WTUserManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1ABB7541ED7228C00C661FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F15719FB1ED7231200BB8019 /* WTAppDelegate.m in Sources */,
+				F1571A221ED7256F00BB8019 /* main.m in Sources */,
+				F1571A2D1ED727E500BB8019 /* WTAPIClient.m in Sources */,
+				F1571A331ED7291E00BB8019 /* NSString+WeaveTime.m in Sources */,
+				F1571A4E1ED76D6800BB8019 /* WTSplashScreenVC.m in Sources */,
+				F1571A5E1EDB67CA00BB8019 /* UIColor+WeaveTime.m in Sources */,
+				F1571A371ED7609000BB8019 /* WTUserDefaultsManager.m in Sources */,
+				F1571A271ED726AA00BB8019 /* WTRequestOperationManager.m in Sources */,
+				F1571A561ED8667C00BB8019 /* WTUser.m in Sources */,
+				F1571A521ED8652200BB8019 /* WTUserManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F1ABB7481ED7227E00C661FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1ABB7491ED7227E00C661FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F1ABB74D1ED7227E00C661FE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1ABB74E1ED7227E00C661FE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1571A171ED7237C00BB8019 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 13F6A704925099124BEF7172 /* Pods-WeaveTime-production.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "WeaveTime/Supporting Files/WTPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/WeaveTime/Supporting Files/Info-production.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geoks.WeaveTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F1571A181ED7237C00BB8019 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A6F316D423D3570857C781F /* Pods-WeaveTime-production.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "WeaveTime/Supporting Files/WTPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/WeaveTime/Supporting Files/Info-production.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.geoks.WeaveTime;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F1ABB7341ED71F2D00C661FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F1ABB7351ED71F2D00C661FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F1ABB76D1ED7228C00C661FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F40C6CD8185C11FAABB03DC /* Pods-WeaveTime-internal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "WeaveTime/Supporting Files/WTPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/WeaveTime/Supporting Files/Info-internal.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geoks.weavetime-internal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F1ABB76E1ED7228C00C661FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 28ADD29829C82E1AF29919C0 /* Pods-WeaveTime-internal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "WeaveTime/Supporting Files/WTPrefixHeader.pch";
+				INFOPLIST_FILE = "$(SRCROOT)/WeaveTime/Supporting Files/Info-internal.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.geoks.weavetime-internal";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1571A161ED7237C00BB8019 /* Build configuration list for PBXNativeTarget "WeaveTime-production" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1571A171ED7237C00BB8019 /* Debug */,
+				F1571A181ED7237C00BB8019 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1ABB71A1ED71F2D00C661FE /* Build configuration list for PBXProject "WeaveTime" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1ABB7341ED71F2D00C661FE /* Debug */,
+				F1ABB7351ED71F2D00C661FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1ABB76C1ED7228C00C661FE /* Build configuration list for PBXNativeTarget "WeaveTime-internal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1ABB76D1ED7228C00C661FE /* Debug */,
+				F1ABB76E1ED7228C00C661FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1ABB7171ED71F2D00C661FE /* Project object */;
+}

@@ -1,0 +1,22 @@
+//
+//  WTPrefixHeader.pch
+//  WeaveTime
+//
+//  Created by Cyril's Mac on 25/05/17.
+//  Copyright © 2017 Geoks. All rights reserved.
+//
+
+#ifndef WTPrefixHeader_pch
+#define WTPrefixHeader_pch
+
+#ifdef __OBJC__
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "WTAPIClient.h"
+#import "NSString+WeaveTime.h"
+#import "UIColor+WeaveTime.h"
+
+#endif
+
+#endif /* WTPrefixHeader_pch */
