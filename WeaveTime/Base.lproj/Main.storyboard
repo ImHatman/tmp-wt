@@ -44,7 +44,7 @@
         <!--WTLoginVC-->
         <scene sceneID="YNd-ig-zdG">
             <objects>
-                <viewController storyboardIdentifier="WTLoginVC" id="aIQ-PO-LNy" userLabel="WTLoginVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WTLoginVC" id="aIQ-PO-LNy" userLabel="WTLoginVC" customClass="WTLoginVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nFV-bL-dP3"/>
                         <viewControllerLayoutGuide type="bottom" id="wBI-a8-IMV"/>
@@ -75,6 +75,9 @@
                                     <constraint firstAttribute="height" constant="40" id="atC-EO-GPR"/>
                                 </constraints>
                                 <state key="normal" title="Connexion"/>
+                                <connections>
+                                    <action selector="loginBtnAction:" destination="aIQ-PO-LNy" eventType="touchUpInside" id="E85-WU-jLT"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -93,10 +96,10 @@
             </objects>
             <point key="canvasLocation" x="1024.8" y="138.98050974512745"/>
         </scene>
-        <!--View Controller-->
+        <!--ContainerVC-->
         <scene sceneID="YPv-Lt-iBF">
             <objects>
-                <viewController storyboardIdentifier="WTContainerVC" id="3QL-at-mxs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WTContainerVC" id="3QL-at-mxs" customClass="WTContainerVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XzH-h7-D1y"/>
                         <viewControllerLayoutGuide type="bottom" id="zc3-p3-Xz2"/>
@@ -105,6 +108,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TaP-LW-MwN">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wwQ-ds-Uhe">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="84"/>
                                 <subviews>
@@ -136,10 +143,6 @@
                                     <constraint firstItem="hwc-hm-dUr" firstAttribute="centerX" secondItem="wwQ-ds-Uhe" secondAttribute="centerX" id="qrt-3a-GY2"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TaP-LW-MwN">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -153,6 +156,9 @@
                         </constraints>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="controllersContainerView" destination="TaP-LW-MwN" id="VFN-j7-i1n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iEy-Eo-Z1v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -178,7 +184,7 @@
         <!--Navigation Controller-->
         <scene sceneID="RPB-Ib-3GF">
             <objects>
-                <navigationController storyboardIdentifier="WTHomeNC" navigationBarHidden="YES" id="zqu-ZA-64t" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="WTProfileNC" navigationBarHidden="YES" id="zqu-ZA-64t" sceneMemberID="viewController">
                     <nil key="simulatedTopBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ebp-W6-BfF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -195,7 +201,7 @@
         <!--WTProfileVC-->
         <scene sceneID="EMy-Lf-czD">
             <objects>
-                <viewController storyboardIdentifier="WTProfileVC" id="sg5-Pn-xjl" userLabel="WTProfileVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WTProfileVC" id="sg5-Pn-xjl" userLabel="WTProfileVC" customClass="WTProfileVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LDu-9N-7vA"/>
                         <viewControllerLayoutGuide type="bottom" id="bfr-hN-djR"/>
@@ -207,8 +213,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="sde-FH-OUv"/>
                     <connections>
-                        <segue destination="4Pl-1x-feu" kind="show" id="zVF-O4-EEA"/>
-                        <segue destination="v9c-Qe-4wn" kind="show" id="tFX-CJ-8I0"/>
+                        <segue destination="4Pl-1x-feu" kind="show" identifier="giveCredit" id="zVF-O4-EEA"/>
+                        <segue destination="v9c-Qe-4wn" kind="show" identifier="showEvents" id="tFX-CJ-8I0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="no1-8I-2wC" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -218,7 +224,7 @@
         <!--WTGiveCreditVC-->
         <scene sceneID="vw7-JT-eW9">
             <objects>
-                <viewController storyboardIdentifier="WTGiveCreditVC" id="4Pl-1x-feu" userLabel="WTGiveCreditVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WTGiveCreditVC" id="4Pl-1x-feu" userLabel="WTGiveCreditVC" customClass="WTGiveCreditVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IJm-pq-ovj"/>
                         <viewControllerLayoutGuide type="bottom" id="ri8-Oi-j1M"/>
@@ -236,7 +242,7 @@
         <!--WTEventsVC-->
         <scene sceneID="93N-FQ-nOT">
             <objects>
-                <viewController storyboardIdentifier="WTEventsVC" id="v9c-Qe-4wn" userLabel="WTEventsVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WTEventsVC" id="v9c-Qe-4wn" userLabel="WTEventsVC" customClass="WTEventsVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="4I7-6u-S1l"/>
                         <viewControllerLayoutGuide type="bottom" id="HEu-67-k5N"/>
@@ -247,17 +253,17 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="DPY-5G-9eH" kind="show" id="8HY-Y0-qx4"/>
+                        <segue destination="DPY-5G-9eH" kind="show" identifier="showEvent" id="8HY-Y0-qx4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vRG-KZ-g2a" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3665" y="2356"/>
+            <point key="canvasLocation" x="3665" y="2434"/>
         </scene>
-        <!--View Controller-->
+        <!--EventVC-->
         <scene sceneID="DWP-DU-Z9x">
             <objects>
-                <viewController storyboardIdentifier="WTEventVC" id="DPY-5G-9eH" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WTEventVC" id="DPY-5G-9eH" customClass="WTEventVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Xa9-xE-hQQ"/>
                         <viewControllerLayoutGuide type="bottom" id="71y-pM-TSi"/>
@@ -270,12 +276,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8ah-sb-Bh3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4487" y="2355"/>
+            <point key="canvasLocation" x="4447" y="2434"/>
         </scene>
         <!--WTHomeVC-->
         <scene sceneID="GO6-Yg-eZ7">
             <objects>
-                <viewController storyboardIdentifier="WTHomeVC" id="A6c-ER-mut" userLabel="WTHomeVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WTHomeVC" id="A6c-ER-mut" userLabel="WTHomeVC" customClass="WTHomeVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gAm-Vl-aqP"/>
                         <viewControllerLayoutGuide type="bottom" id="RQJ-ju-mpU"/>
@@ -288,29 +294,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rIy-rg-Fqo">
-                                <rect key="frame" x="315" y="607" width="40" height="40"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lws-C8-3ca">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TJ-9p-6Vz">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
-                                        <state key="normal" title="Button"/>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Tl-QM-miZ" customClass="KYButton" customModule="KYFloatingActionButton">
+                                <rect key="frame" x="300" y="592" width="55" height="55"/>
+                                <color key="backgroundColor" red="0.25882352939999997" green="0.78823529410000004" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="6TJ-9p-6Vz" firstAttribute="centerY" secondItem="rIy-rg-Fqo" secondAttribute="centerY" id="APo-1a-j7G"/>
-                                    <constraint firstItem="6TJ-9p-6Vz" firstAttribute="centerX" secondItem="rIy-rg-Fqo" secondAttribute="centerX" id="CHh-h8-bpI"/>
-                                    <constraint firstItem="6TJ-9p-6Vz" firstAttribute="width" secondItem="rIy-rg-Fqo" secondAttribute="width" id="LXi-Yb-fHb"/>
-                                    <constraint firstAttribute="height" constant="40" id="U9F-RM-Okk"/>
-                                    <constraint firstItem="6TJ-9p-6Vz" firstAttribute="height" secondItem="rIy-rg-Fqo" secondAttribute="height" id="UK3-hZ-nQi"/>
-                                    <constraint firstItem="Lws-C8-3ca" firstAttribute="height" secondItem="rIy-rg-Fqo" secondAttribute="height" id="WMU-G9-iWn"/>
-                                    <constraint firstItem="Lws-C8-3ca" firstAttribute="centerX" secondItem="rIy-rg-Fqo" secondAttribute="centerX" id="Yai-pq-LbL"/>
-                                    <constraint firstItem="Lws-C8-3ca" firstAttribute="width" secondItem="rIy-rg-Fqo" secondAttribute="width" id="icR-Lx-6sJ"/>
-                                    <constraint firstItem="Lws-C8-3ca" firstAttribute="centerY" secondItem="rIy-rg-Fqo" secondAttribute="centerY" id="owA-hm-Pct"/>
-                                    <constraint firstAttribute="width" constant="40" id="sD5-A1-4nk"/>
+                                    <constraint firstAttribute="width" constant="55" id="NcA-cw-kHI"/>
+                                    <constraint firstAttribute="height" constant="55" id="Qbg-oc-Yta"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -319,15 +308,16 @@
                             <constraint firstItem="ZxL-0x-LMR" firstAttribute="top" secondItem="gAm-Vl-aqP" secondAttribute="bottom" constant="-20" id="3aB-AM-RFN"/>
                             <constraint firstItem="RQJ-ju-mpU" firstAttribute="top" secondItem="ZxL-0x-LMR" secondAttribute="bottom" id="Duw-cL-inK"/>
                             <constraint firstItem="ZxL-0x-LMR" firstAttribute="leading" secondItem="oNe-Lh-xO7" secondAttribute="leading" id="NHD-bT-icn"/>
-                            <constraint firstAttribute="trailing" secondItem="rIy-rg-Fqo" secondAttribute="trailing" constant="20" id="Oqn-Nv-TkR"/>
+                            <constraint firstAttribute="trailing" secondItem="3Tl-QM-miZ" secondAttribute="trailing" constant="20" id="gbU-a5-ov0"/>
+                            <constraint firstItem="RQJ-ju-mpU" firstAttribute="top" secondItem="3Tl-QM-miZ" secondAttribute="bottom" constant="20" id="jw0-XU-U59"/>
                             <constraint firstAttribute="trailing" secondItem="ZxL-0x-LMR" secondAttribute="trailing" id="upx-JO-U7k"/>
-                            <constraint firstItem="RQJ-ju-mpU" firstAttribute="top" secondItem="rIy-rg-Fqo" secondAttribute="bottom" constant="20" id="wUD-em-hiA"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ljh-O2-yYj"/>
                     <connections>
-                        <segue destination="00q-Oi-MXe" kind="show" identifier="showPostStoryVC" id="nwW-MY-p56"/>
-                        <segue destination="P9v-ls-Sas" kind="show" id="SbE-it-Io9"/>
+                        <outlet property="menuBtn" destination="3Tl-QM-miZ" id="AZy-kJ-euA"/>
+                        <segue destination="00q-Oi-MXe" kind="show" identifier="postStory" id="nwW-MY-p56"/>
+                        <segue destination="P9v-ls-Sas" kind="show" identifier="showStoryDetails" id="SbE-it-Io9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qgo-Lv-w2p" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -337,7 +327,7 @@
         <!--WTStoryDetailsVC-->
         <scene sceneID="03l-vo-CuG">
             <objects>
-                <viewController storyboardIdentifier="WTStoryDetailsVC" id="P9v-ls-Sas" userLabel="WTStoryDetailsVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WTStoryDetailsVC" id="P9v-ls-Sas" userLabel="WTStoryDetailsVC" customClass="WTStoryDetailsVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="oGX-Zw-VAS"/>
                         <viewControllerLayoutGuide type="bottom" id="uCF-jI-UYz"/>
@@ -355,7 +345,7 @@
         <!--WTPostStoryVC-->
         <scene sceneID="HnL-k1-MMp">
             <objects>
-                <viewController storyboardIdentifier="WTPostStoryVC" id="00q-Oi-MXe" userLabel="WTPostStoryVC" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WTPostStoryVC" id="00q-Oi-MXe" userLabel="WTPostStoryVC" customClass="WTPostStoryVC" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="siz-l2-drG"/>
                         <viewControllerLayoutGuide type="bottom" id="lY4-S5-K2y"/>

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		045BE36C1CC0E65C33C757D5 /* libPods-WeaveTime-production.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 624D37BFB64D775E5758950E /* libPods-WeaveTime-production.a */; };
-		3D09D6D20075329969EA3CFE /* libPods-WeaveTime-internal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 72EB445DCD59AD8493FEE26C /* libPods-WeaveTime-internal.a */; };
+		8FEA23BE36A80919941223AF /* Pods_WeaveTime_production.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A236DA9F89B02CD3DCA73CF9 /* Pods_WeaveTime_production.framework */; };
+		EBB544D24F6303148D0DB9CA /* Pods_WeaveTime_internal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4378D238E5810200456B23 /* Pods_WeaveTime_internal.framework */; };
 		F15719FA1ED7230F00BB8019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1ABB7481ED7227E00C661FE /* Main.storyboard */; };
 		F15719FB1ED7231200BB8019 /* WTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ABB7431ED7227E00C661FE /* WTAppDelegate.m */; };
 		F15719FC1ED7231800BB8019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1ABB74D1ED7227E00C661FE /* LaunchScreen.storyboard */; };
@@ -33,15 +33,33 @@
 		F1571A561ED8667C00BB8019 /* WTUser.m in Sources */ = {isa = PBXBuildFile; fileRef = F1571A541ED8667C00BB8019 /* WTUser.m */; };
 		F1571A5D1EDB67CA00BB8019 /* UIColor+WeaveTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F1571A5C1EDB67CA00BB8019 /* UIColor+WeaveTime.m */; };
 		F1571A5E1EDB67CA00BB8019 /* UIColor+WeaveTime.m in Sources */ = {isa = PBXBuildFile; fileRef = F1571A5C1EDB67CA00BB8019 /* UIColor+WeaveTime.m */; };
+		F15871541EDCD0AA009F56F7 /* WTLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F15871531EDCD0AA009F56F7 /* WTLoginVC.m */; };
+		F15871551EDCD0AA009F56F7 /* WTLoginVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F15871531EDCD0AA009F56F7 /* WTLoginVC.m */; };
+		F15871581EDCD123009F56F7 /* WTContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F15871571EDCD123009F56F7 /* WTContainerVC.m */; };
+		F15871591EDCD123009F56F7 /* WTContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F15871571EDCD123009F56F7 /* WTContainerVC.m */; };
+		F158715C1EDCD1A3009F56F7 /* WTHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F158715B1EDCD1A3009F56F7 /* WTHomeVC.m */; };
+		F158715D1EDCD1A3009F56F7 /* WTHomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F158715B1EDCD1A3009F56F7 /* WTHomeVC.m */; };
+		F15871601EDCD21B009F56F7 /* WTStoryDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F158715F1EDCD21B009F56F7 /* WTStoryDetailsVC.m */; };
+		F15871611EDCD21B009F56F7 /* WTStoryDetailsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F158715F1EDCD21B009F56F7 /* WTStoryDetailsVC.m */; };
+		F15871641EDCD287009F56F7 /* WTPostStoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F15871631EDCD287009F56F7 /* WTPostStoryVC.m */; };
+		F15871651EDCD287009F56F7 /* WTPostStoryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F15871631EDCD287009F56F7 /* WTPostStoryVC.m */; };
+		F15871681EDCD30D009F56F7 /* WTProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F15871671EDCD30D009F56F7 /* WTProfileVC.m */; };
+		F15871691EDCD30D009F56F7 /* WTProfileVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F15871671EDCD30D009F56F7 /* WTProfileVC.m */; };
+		F158716C1EDCD378009F56F7 /* WTGiveCreditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F158716B1EDCD378009F56F7 /* WTGiveCreditVC.m */; };
+		F158716D1EDCD378009F56F7 /* WTGiveCreditVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F158716B1EDCD378009F56F7 /* WTGiveCreditVC.m */; };
+		F15871701EDCD3C6009F56F7 /* WTEventsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F158716F1EDCD3C6009F56F7 /* WTEventsVC.m */; };
+		F15871711EDCD3C6009F56F7 /* WTEventsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F158716F1EDCD3C6009F56F7 /* WTEventsVC.m */; };
+		F15871741EDCD438009F56F7 /* WTEventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F15871731EDCD438009F56F7 /* WTEventVC.m */; };
+		F15871751EDCD438009F56F7 /* WTEventVC.m in Sources */ = {isa = PBXBuildFile; fileRef = F15871731EDCD438009F56F7 /* WTEventVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13F6A704925099124BEF7172 /* Pods-WeaveTime-production.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaveTime-production.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeaveTime-production/Pods-WeaveTime-production.debug.xcconfig"; sourceTree = "<group>"; };
 		28ADD29829C82E1AF29919C0 /* Pods-WeaveTime-internal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaveTime-internal.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeaveTime-internal/Pods-WeaveTime-internal.release.xcconfig"; sourceTree = "<group>"; };
+		2A4378D238E5810200456B23 /* Pods_WeaveTime_internal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeaveTime_internal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F40C6CD8185C11FAABB03DC /* Pods-WeaveTime-internal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaveTime-internal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeaveTime-internal/Pods-WeaveTime-internal.debug.xcconfig"; sourceTree = "<group>"; };
-		624D37BFB64D775E5758950E /* libPods-WeaveTime-production.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeaveTime-production.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		72EB445DCD59AD8493FEE26C /* libPods-WeaveTime-internal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeaveTime-internal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6F316D423D3570857C781F /* Pods-WeaveTime-production.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaveTime-production.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeaveTime-production/Pods-WeaveTime-production.release.xcconfig"; sourceTree = "<group>"; };
+		A236DA9F89B02CD3DCA73CF9 /* Pods_WeaveTime_production.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeaveTime_production.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1571A021ED7237C00BB8019 /* WeaveTime-production.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WeaveTime-production.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1571A1E1ED7242900BB8019 /* Info-internal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-internal.plist"; sourceTree = "<group>"; };
 		F1571A241ED726AA00BB8019 /* WTRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTRequestOperationManager.h; sourceTree = "<group>"; };
@@ -61,6 +79,24 @@
 		F1571A541ED8667C00BB8019 /* WTUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WTUser.m; path = Model/WTUser.m; sourceTree = "<group>"; };
 		F1571A5B1EDB67CA00BB8019 /* UIColor+WeaveTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+WeaveTime.h"; sourceTree = "<group>"; };
 		F1571A5C1EDB67CA00BB8019 /* UIColor+WeaveTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+WeaveTime.m"; sourceTree = "<group>"; };
+		F15871521EDCD0AA009F56F7 /* WTLoginVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTLoginVC.h; sourceTree = "<group>"; };
+		F15871531EDCD0AA009F56F7 /* WTLoginVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTLoginVC.m; sourceTree = "<group>"; };
+		F15871561EDCD123009F56F7 /* WTContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTContainerVC.h; sourceTree = "<group>"; };
+		F15871571EDCD123009F56F7 /* WTContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTContainerVC.m; sourceTree = "<group>"; };
+		F158715A1EDCD1A3009F56F7 /* WTHomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTHomeVC.h; sourceTree = "<group>"; };
+		F158715B1EDCD1A3009F56F7 /* WTHomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTHomeVC.m; sourceTree = "<group>"; };
+		F158715E1EDCD21B009F56F7 /* WTStoryDetailsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTStoryDetailsVC.h; sourceTree = "<group>"; };
+		F158715F1EDCD21B009F56F7 /* WTStoryDetailsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTStoryDetailsVC.m; sourceTree = "<group>"; };
+		F15871621EDCD287009F56F7 /* WTPostStoryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTPostStoryVC.h; sourceTree = "<group>"; };
+		F15871631EDCD287009F56F7 /* WTPostStoryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTPostStoryVC.m; sourceTree = "<group>"; };
+		F15871661EDCD30D009F56F7 /* WTProfileVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTProfileVC.h; sourceTree = "<group>"; };
+		F15871671EDCD30D009F56F7 /* WTProfileVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTProfileVC.m; sourceTree = "<group>"; };
+		F158716A1EDCD378009F56F7 /* WTGiveCreditVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTGiveCreditVC.h; sourceTree = "<group>"; };
+		F158716B1EDCD378009F56F7 /* WTGiveCreditVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTGiveCreditVC.m; sourceTree = "<group>"; };
+		F158716E1EDCD3C6009F56F7 /* WTEventsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTEventsVC.h; sourceTree = "<group>"; };
+		F158716F1EDCD3C6009F56F7 /* WTEventsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTEventsVC.m; sourceTree = "<group>"; };
+		F15871721EDCD438009F56F7 /* WTEventVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTEventVC.h; sourceTree = "<group>"; };
+		F15871731EDCD438009F56F7 /* WTEventVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTEventVC.m; sourceTree = "<group>"; };
 		F1ABB7401ED7227E00C661FE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F1ABB7421ED7227E00C661FE /* WTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTAppDelegate.h; sourceTree = "<group>"; };
 		F1ABB7431ED7227E00C661FE /* WTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTAppDelegate.m; sourceTree = "<group>"; };
@@ -76,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				045BE36C1CC0E65C33C757D5 /* libPods-WeaveTime-production.a in Frameworks */,
+				8FEA23BE36A80919941223AF /* Pods_WeaveTime_production.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D09D6D20075329969EA3CFE /* libPods-WeaveTime-internal.a in Frameworks */,
+				EBB544D24F6303148D0DB9CA /* Pods_WeaveTime_internal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,8 +141,8 @@
 		88B0562F856203FEE707FC24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				72EB445DCD59AD8493FEE26C /* libPods-WeaveTime-internal.a */,
-				624D37BFB64D775E5758950E /* libPods-WeaveTime-production.a */,
+				2A4378D238E5810200456B23 /* Pods_WeaveTime_internal.framework */,
+				A236DA9F89B02CD3DCA73CF9 /* Pods_WeaveTime_production.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -211,6 +247,24 @@
 			children = (
 				F1571A4B1ED76D6800BB8019 /* WTSplashScreenVC.h */,
 				F1571A4C1ED76D6800BB8019 /* WTSplashScreenVC.m */,
+				F15871521EDCD0AA009F56F7 /* WTLoginVC.h */,
+				F15871531EDCD0AA009F56F7 /* WTLoginVC.m */,
+				F15871561EDCD123009F56F7 /* WTContainerVC.h */,
+				F15871571EDCD123009F56F7 /* WTContainerVC.m */,
+				F158715A1EDCD1A3009F56F7 /* WTHomeVC.h */,
+				F158715B1EDCD1A3009F56F7 /* WTHomeVC.m */,
+				F158715E1EDCD21B009F56F7 /* WTStoryDetailsVC.h */,
+				F158715F1EDCD21B009F56F7 /* WTStoryDetailsVC.m */,
+				F15871621EDCD287009F56F7 /* WTPostStoryVC.h */,
+				F15871631EDCD287009F56F7 /* WTPostStoryVC.m */,
+				F15871661EDCD30D009F56F7 /* WTProfileVC.h */,
+				F15871671EDCD30D009F56F7 /* WTProfileVC.m */,
+				F158716A1EDCD378009F56F7 /* WTGiveCreditVC.h */,
+				F158716B1EDCD378009F56F7 /* WTGiveCreditVC.m */,
+				F158716E1EDCD3C6009F56F7 /* WTEventsVC.h */,
+				F158716F1EDCD3C6009F56F7 /* WTEventsVC.m */,
+				F15871721EDCD438009F56F7 /* WTEventVC.h */,
+				F15871731EDCD438009F56F7 /* WTEventVC.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -344,6 +398,7 @@
 				TargetAttributes = {
 					F1571A011ED7237C00BB8019 = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					F1ABB7571ED7228C00C661FE = {
@@ -491,14 +546,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				F1571A191ED723BC00BB8019 /* WTAppDelegate.m in Sources */,
+				F15871581EDCD123009F56F7 /* WTContainerVC.m in Sources */,
 				F1571A211ED7256F00BB8019 /* main.m in Sources */,
 				F1571A2C1ED727E500BB8019 /* WTAPIClient.m in Sources */,
 				F1571A321ED7291E00BB8019 /* NSString+WeaveTime.m in Sources */,
 				F1571A4D1ED76D6800BB8019 /* WTSplashScreenVC.m in Sources */,
 				F1571A5D1EDB67CA00BB8019 /* UIColor+WeaveTime.m in Sources */,
+				F158715C1EDCD1A3009F56F7 /* WTHomeVC.m in Sources */,
+				F15871601EDCD21B009F56F7 /* WTStoryDetailsVC.m in Sources */,
 				F1571A361ED7609000BB8019 /* WTUserDefaultsManager.m in Sources */,
 				F1571A261ED726AA00BB8019 /* WTRequestOperationManager.m in Sources */,
+				F15871541EDCD0AA009F56F7 /* WTLoginVC.m in Sources */,
+				F15871701EDCD3C6009F56F7 /* WTEventsVC.m in Sources */,
 				F1571A551ED8667C00BB8019 /* WTUser.m in Sources */,
+				F158716C1EDCD378009F56F7 /* WTGiveCreditVC.m in Sources */,
+				F15871741EDCD438009F56F7 /* WTEventVC.m in Sources */,
+				F15871681EDCD30D009F56F7 /* WTProfileVC.m in Sources */,
+				F15871641EDCD287009F56F7 /* WTPostStoryVC.m in Sources */,
 				F1571A511ED8652200BB8019 /* WTUserManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -508,14 +572,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				F15719FB1ED7231200BB8019 /* WTAppDelegate.m in Sources */,
+				F15871591EDCD123009F56F7 /* WTContainerVC.m in Sources */,
 				F1571A221ED7256F00BB8019 /* main.m in Sources */,
 				F1571A2D1ED727E500BB8019 /* WTAPIClient.m in Sources */,
 				F1571A331ED7291E00BB8019 /* NSString+WeaveTime.m in Sources */,
 				F1571A4E1ED76D6800BB8019 /* WTSplashScreenVC.m in Sources */,
 				F1571A5E1EDB67CA00BB8019 /* UIColor+WeaveTime.m in Sources */,
+				F158715D1EDCD1A3009F56F7 /* WTHomeVC.m in Sources */,
+				F15871611EDCD21B009F56F7 /* WTStoryDetailsVC.m in Sources */,
 				F1571A371ED7609000BB8019 /* WTUserDefaultsManager.m in Sources */,
 				F1571A271ED726AA00BB8019 /* WTRequestOperationManager.m in Sources */,
+				F15871551EDCD0AA009F56F7 /* WTLoginVC.m in Sources */,
+				F15871711EDCD3C6009F56F7 /* WTEventsVC.m in Sources */,
 				F1571A561ED8667C00BB8019 /* WTUser.m in Sources */,
+				F158716D1EDCD378009F56F7 /* WTGiveCreditVC.m in Sources */,
+				F15871751EDCD438009F56F7 /* WTEventVC.m in Sources */,
+				F15871691EDCD30D009F56F7 /* WTProfileVC.m in Sources */,
+				F15871651EDCD287009F56F7 /* WTPostStoryVC.m in Sources */,
 				F1571A521ED8652200BB8019 /* WTUserManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,11 +620,14 @@
 			baseConfigurationReference = 13F6A704925099124BEF7172 /* Pods-WeaveTime-production.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREFIX_HEADER = "WeaveTime/Supporting Files/WTPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/WeaveTime/Supporting Files/Info-production.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geoks.WeaveTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -560,11 +636,13 @@
 			baseConfigurationReference = 7A6F316D423D3570857C781F /* Pods-WeaveTime-production.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				GCC_PREFIX_HEADER = "WeaveTime/Supporting Files/WTPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/WeaveTime/Supporting Files/Info-production.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geoks.WeaveTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -612,6 +690,7 @@
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -652,6 +731,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

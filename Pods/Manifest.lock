@@ -20,13 +20,16 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - KYFloatingActionButton (1.0.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
+  - KYFloatingActionButton
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  KYFloatingActionButton: e64e2c8273a54f1e857297b8fbea9bb0bbd2e30b
 
-PODFILE CHECKSUM: ba093298f03b2c08c738431a2f01090ddd6add32
+PODFILE CHECKSUM: d744689d51be0b157846bbf94a5200db97afd965
 
 COCOAPODS: 1.2.1

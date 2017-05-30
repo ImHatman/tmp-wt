@@ -8,6 +8,7 @@
 
 #import "WTSplashScreenVC.h"
 #import "WTUserManager.h"
+#import "WTLoginVC.h"
 
 @interface WTSplashScreenVC ()
 
@@ -42,6 +43,8 @@
 
 - (void)viewDidAppear:(BOOL)animated {
 	[super viewDidAppear:animated];
+    
+    [self loadRelevantController];
 }
 
 #pragma mark OUT
@@ -58,18 +61,29 @@
 #pragma mark UI
 
 - (void)initUI {
-    if ([[WTUserManager sharedManager] hasLoggedInAccount] == YES) {
-        [self loadHomeScreen];
-    } else {
+
+}
+
+- (void)loadRelevantController {
+    BOOL hasAccount = [[WTUserManager sharedManager] hasLoggedInAccount];
+    
+#ifdef DEBUG
+    hasAccount = NO;
+#endif
+    
+    if (hasAccount == NO) {
         [self loadLoginScreen];
+    } else {
+        [self loadHomeScreen];
     }
 }
 
-- (void)loadHomeScreen {
-    
+- (void)loadLoginScreen {
+    WTLoginVC *loginVC = [WTLoginVC controller];
+    [self presentViewController:loginVC animated:NO completion:nil];
 }
 
-- (void)loadLoginScreen {
+- (void)loadHomeScreen {
     
 }
 
