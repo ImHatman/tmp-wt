@@ -20,16 +20,16 @@ PODS:
   - AFNetworking/UIKit (2.6.3):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
-  - KYFloatingActionButton (1.0.0)
+  - LGPlusButtonsView (1.1.1)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
-  - KYFloatingActionButton
+  - LGPlusButtonsView (~> 1.1.0)
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
-  KYFloatingActionButton: e64e2c8273a54f1e857297b8fbea9bb0bbd2e30b
+  LGPlusButtonsView: 57878cd3d461d0ee2042f5b7b25d1c017e22a084
 
-PODFILE CHECKSUM: d744689d51be0b157846bbf94a5200db97afd965
+PODFILE CHECKSUM: da7c8441bc7b853aa411cf0d49ef43d4e00d8a37
 
 COCOAPODS: 1.2.1

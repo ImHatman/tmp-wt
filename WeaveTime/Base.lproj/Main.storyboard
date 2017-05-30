@@ -294,28 +294,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Tl-QM-miZ" customClass="KYButton" customModule="KYFloatingActionButton">
-                                <rect key="frame" x="300" y="592" width="55" height="55"/>
-                                <color key="backgroundColor" red="0.25882352939999997" green="0.78823529410000004" blue="0.46666666670000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="55" id="NcA-cw-kHI"/>
-                                    <constraint firstAttribute="height" constant="55" id="Qbg-oc-Yta"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="ZxL-0x-LMR" firstAttribute="top" secondItem="gAm-Vl-aqP" secondAttribute="bottom" constant="-20" id="3aB-AM-RFN"/>
                             <constraint firstItem="RQJ-ju-mpU" firstAttribute="top" secondItem="ZxL-0x-LMR" secondAttribute="bottom" id="Duw-cL-inK"/>
                             <constraint firstItem="ZxL-0x-LMR" firstAttribute="leading" secondItem="oNe-Lh-xO7" secondAttribute="leading" id="NHD-bT-icn"/>
-                            <constraint firstAttribute="trailing" secondItem="3Tl-QM-miZ" secondAttribute="trailing" constant="20" id="gbU-a5-ov0"/>
-                            <constraint firstItem="RQJ-ju-mpU" firstAttribute="top" secondItem="3Tl-QM-miZ" secondAttribute="bottom" constant="20" id="jw0-XU-U59"/>
                             <constraint firstAttribute="trailing" secondItem="ZxL-0x-LMR" secondAttribute="trailing" id="upx-JO-U7k"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Ljh-O2-yYj"/>
                     <connections>
-                        <outlet property="menuBtn" destination="3Tl-QM-miZ" id="AZy-kJ-euA"/>
                         <segue destination="00q-Oi-MXe" kind="show" identifier="postStory" id="nwW-MY-p56"/>
                         <segue destination="P9v-ls-Sas" kind="show" identifier="showStoryDetails" id="SbE-it-Io9"/>
                     </connections>

@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8FEA23BE36A80919941223AF /* Pods_WeaveTime_production.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A236DA9F89B02CD3DCA73CF9 /* Pods_WeaveTime_production.framework */; };
-		EBB544D24F6303148D0DB9CA /* Pods_WeaveTime_internal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A4378D238E5810200456B23 /* Pods_WeaveTime_internal.framework */; };
+		453079E49E9D0FDC5F315827 /* libPods-WeaveTime-production.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0D058F25B55F9D583C6D083 /* libPods-WeaveTime-production.a */; };
+		C4FE6FB8E1766AF3241B4365 /* libPods-WeaveTime-internal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CBD1EE6F1B8AE1EA8BBCCC13 /* libPods-WeaveTime-internal.a */; };
 		F15719FA1ED7230F00BB8019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1ABB7481ED7227E00C661FE /* Main.storyboard */; };
 		F15719FB1ED7231200BB8019 /* WTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F1ABB7431ED7227E00C661FE /* WTAppDelegate.m */; };
 		F15719FC1ED7231800BB8019 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1ABB74D1ED7227E00C661FE /* LaunchScreen.storyboard */; };
@@ -56,10 +56,10 @@
 /* Begin PBXFileReference section */
 		13F6A704925099124BEF7172 /* Pods-WeaveTime-production.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaveTime-production.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeaveTime-production/Pods-WeaveTime-production.debug.xcconfig"; sourceTree = "<group>"; };
 		28ADD29829C82E1AF29919C0 /* Pods-WeaveTime-internal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaveTime-internal.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeaveTime-internal/Pods-WeaveTime-internal.release.xcconfig"; sourceTree = "<group>"; };
-		2A4378D238E5810200456B23 /* Pods_WeaveTime_internal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeaveTime_internal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F40C6CD8185C11FAABB03DC /* Pods-WeaveTime-internal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaveTime-internal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeaveTime-internal/Pods-WeaveTime-internal.debug.xcconfig"; sourceTree = "<group>"; };
 		7A6F316D423D3570857C781F /* Pods-WeaveTime-production.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeaveTime-production.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeaveTime-production/Pods-WeaveTime-production.release.xcconfig"; sourceTree = "<group>"; };
-		A236DA9F89B02CD3DCA73CF9 /* Pods_WeaveTime_production.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeaveTime_production.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0D058F25B55F9D583C6D083 /* libPods-WeaveTime-production.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeaveTime-production.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBD1EE6F1B8AE1EA8BBCCC13 /* libPods-WeaveTime-internal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeaveTime-internal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1571A021ED7237C00BB8019 /* WeaveTime-production.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WeaveTime-production.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1571A1E1ED7242900BB8019 /* Info-internal.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-internal.plist"; sourceTree = "<group>"; };
 		F1571A241ED726AA00BB8019 /* WTRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTRequestOperationManager.h; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FEA23BE36A80919941223AF /* Pods_WeaveTime_production.framework in Frameworks */,
+				453079E49E9D0FDC5F315827 /* libPods-WeaveTime-production.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBB544D24F6303148D0DB9CA /* Pods_WeaveTime_internal.framework in Frameworks */,
+				C4FE6FB8E1766AF3241B4365 /* libPods-WeaveTime-internal.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +141,8 @@
 		88B0562F856203FEE707FC24 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2A4378D238E5810200456B23 /* Pods_WeaveTime_internal.framework */,
-				A236DA9F89B02CD3DCA73CF9 /* Pods_WeaveTime_production.framework */,
+				CBD1EE6F1B8AE1EA8BBCCC13 /* libPods-WeaveTime-internal.a */,
+				B0D058F25B55F9D583C6D083 /* libPods-WeaveTime-production.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -626,6 +626,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geoks.WeaveTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -642,6 +643,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.geoks.WeaveTime;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

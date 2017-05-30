@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
 @interface WTHomeVC : UIViewController
 
 #pragma mark - Properties -
@@ -22,7 +21,6 @@
 
 #pragma mark - Linked From Storyboard -
 #pragma mark IBOutlets
-
 
 #pragma mark IBActions
 

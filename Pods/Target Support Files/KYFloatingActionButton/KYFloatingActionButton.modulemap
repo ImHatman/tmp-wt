@@ -1,6 +1,0 @@
-framework module KYFloatingActionButton {
-  umbrella header "KYFloatingActionButton-umbrella.h"
-
-  export *
-  module * { export * }
-}
